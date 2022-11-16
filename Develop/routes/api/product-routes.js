@@ -48,7 +48,7 @@ router.get('/:id', (req, res) => {
       }
     ]
   })
-  then(Data => res.json(Data))
+  .then(Data => res.json(Data))
   .catch((err) => {
     console.log(err);
     res.status(500).json(err);
